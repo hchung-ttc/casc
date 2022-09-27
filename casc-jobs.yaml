@@ -78,10 +78,12 @@ unclassified:
     url: http://jenkins.howardchung.local.jobvite.net
 jobs:
   - script: |
-      multibranchPipelineJob('configuration-as-code') {
+      jobarray = ['job1','job2']
+      for(currentjob in jobarray)
+      multibranchPipelineJob("$currentjob") { // normal variable syntax
           branchSources {
               git {
-                  id = 'configuration-as-code'
+                  id = "^${currentjob}"       // accessing variable with escaping
                   remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
               }
           }
