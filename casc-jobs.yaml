@@ -88,7 +88,6 @@ jobs:
               }
           }
       }
-jobs:
   - script: |
       multibranchPipelineJob('configuration-as-code') {
           branchSources {
