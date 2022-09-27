@@ -76,14 +76,3 @@ unclassified:
   location:
     adminAddress: 
     url: http://jenkins.howardchung.local.jobvite.net
-jobs:
-  - script: >
-        multibranchPipelineJob('configuration-as-code') {
-        branchSources {
-                git {
-                id = 'configuration-as-code'
-                remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
-                }
-        }
-        }
-        
