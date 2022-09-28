@@ -111,6 +111,16 @@ unclassified:
               remote: "git@github.com:hchung-ttc/casc.git"
               traits:
               - "gitBranchDiscovery"
+    - defaultVersion: "main"
+      implicit: true
+      name: "howard_repo2"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              remote: "git@github.com:hchung-ttc/casc2.git"
+              traits:
+              - "gitBranchDiscovery"              
   buildDiscarders:
     configuredBuildDiscarders:
     - "jobBuildDiscarder"
