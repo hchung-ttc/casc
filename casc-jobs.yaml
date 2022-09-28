@@ -101,9 +101,9 @@ security:
 unclassified:
   globalLibraries:
     libraries:
-    - defaultVersion: "master"
+    - defaultVersion: "main"
       implicit: true
-      name: "jobvite_groovy"
+      name: "howard_repo"
       retriever:
         modernSCM:
           scm:
